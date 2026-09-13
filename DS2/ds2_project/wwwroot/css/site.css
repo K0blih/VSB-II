@@ -1,0 +1,308 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background:
+    radial-gradient(circle at top left, rgba(40, 116, 166, 0.14), transparent 28rem),
+    linear-gradient(180deg, #f7f9fb 0%, #eef3f6 100%);
+  color: #17212b;
+}
+
+.navbar {
+  backdrop-filter: blur(16px);
+}
+
+.shop-ops-shell {
+  padding: 1rem 0 2.5rem;
+}
+
+.ops-hero {
+  background: linear-gradient(135deg, #143447 0%, #1f6f78 52%, #e6b85c 100%);
+  border-radius: 8px;
+  color: #fff;
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+  padding: 2rem;
+  position: relative;
+}
+
+.ops-hero::after {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.13) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.13) 1px, transparent 1px);
+  background-size: 42px 42px;
+  content: "";
+  inset: 0;
+  opacity: 0.28;
+  position: absolute;
+}
+
+.ops-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.ops-kicker {
+  color: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+}
+
+.ops-hero h1 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.ops-copy {
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 38rem;
+  margin: 0.75rem 0 0;
+}
+
+.ops-panel,
+.ship-card,
+.shop-simple-page {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(28, 43, 54, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 18px 50px rgba(20, 52, 71, 0.08);
+}
+
+.ship-page-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(18rem, 1fr) minmax(14rem, 0.65fr);
+}
+
+.ops-panel,
+.ship-card,
+.shop-simple-page {
+  padding: 1.25rem;
+}
+
+.ship-card {
+  background: #ffffff;
+}
+
+.ship-card-narrow {
+  margin: 0 auto;
+  max-width: 42rem;
+}
+
+.panel-heading {
+  align-items: start;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.panel-heading h2 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.status-pill {
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.35rem 0.6rem;
+  white-space: nowrap;
+}
+
+.status-pill.paid {
+  background: #e8f3ed;
+  color: #24724d;
+}
+
+.status-pill.live {
+  background: #fff3d8;
+  color: #865a06;
+}
+
+.ship-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-field .form-control {
+  border-color: #d7e0e6;
+  min-height: 3rem;
+}
+
+.ship-button {
+  background: #1f6f78;
+  border-color: #1f6f78;
+  font-weight: 700;
+  min-height: 3rem;
+}
+
+.ship-button:hover,
+.ship-button:focus {
+  background: #185a62;
+  border-color: #185a62;
+}
+
+.empty-copy,
+.empty-state {
+  color: #52616c;
+  margin: 0;
+}
+
+.empty-state {
+  background: #f6f8fa;
+  border: 1px solid #e6ebef;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.shop-simple-page {
+  margin: 1rem auto 0;
+  max-width: 48rem;
+}
+
+.shop-wide-page {
+  max-width: 64rem;
+}
+
+.shop-simple-page h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.shop-table-wrap {
+  background: #ffffff;
+  border: 1px solid rgba(28, 43, 54, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.shop-table {
+  margin-bottom: 0;
+}
+
+.shop-table thead th {
+  background: #f6f8fa;
+  color: #52616c;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.warehouse-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.warehouse-card {
+  background: #ffffff;
+  border: 1px solid rgba(28, 43, 54, 0.08);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.warehouse-card h2 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 0.35rem;
+}
+
+.warehouse-card p {
+  color: #66727d;
+  margin-bottom: 0;
+}
+
+.shop-link-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.shop-link-card {
+  background: #ffffff;
+  border: 1px solid rgba(28, 43, 54, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 18px 50px rgba(20, 52, 71, 0.08);
+  color: #17212b;
+  padding: 1.25rem;
+  text-decoration: none;
+}
+
+.shop-link-card span {
+  color: #66727d;
+  display: block;
+  font-size: 0.82rem;
+  margin-bottom: 0.35rem;
+}
+
+.shop-link-card strong {
+  display: block;
+  font-size: 1.05rem;
+}
+
+.shop-link-card:hover,
+.shop-link-card:focus {
+  color: #143447;
+  transform: translateY(-1px);
+}
+
+.shop-link-card.action {
+  border-color: rgba(31, 111, 120, 0.3);
+}
+
+@media (max-width: 991.98px) {
+  .ship-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-link-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .warehouse-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ops-hero {
+    padding: 1.25rem;
+  }
+
+  .shop-link-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}

@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "Home";
+}
+
+<section class="shop-ops-shell">
+    <div class="ops-hero">
+        <div>
+            <p class="ops-kicker">DS2 Shop</p>
+            <h1>E-shop administration</h1>
+        </div>
+    </div>
+
+    <div class="shop-link-grid">
+        <a class="shop-link-card" asp-controller="Home" asp-action="Products">
+            <span>Catalog</span>
+            <strong>Products</strong>
+        </a>
+        <a class="shop-link-card" asp-controller="Home" asp-action="Orders">
+            <span>Orders</span>
+            <strong>Orders</strong>
+        </a>
+        <a class="shop-link-card" asp-controller="Home" asp-action="Warehouses">
+            <span>Stock</span>
+            <strong>Warehouses</strong>
+        </a>
+        <a class="shop-link-card action" asp-controller="ShipOrder" asp-action="Index">
+            <span>Transaction</span>
+            <strong>Ship order</strong>
+        </a>
+    </div>
+</section>
